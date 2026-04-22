@@ -1,7 +1,7 @@
 package edu.etec.ds.fundamentos
 
 fun suma(a: Int, b: Int): Int {
-        return a + b;
+    return a + b;
 }
 
 fun resta(a: Int, b: Int): Int {
@@ -17,8 +17,8 @@ fun division(a: Int, b: Int): Int {
 }
 
 fun modulo(a: Int, b: Int): Int {
-    val resultado = a % b;
-    return resultado
+    return a % b
+
 }
 
 fun esMayorQue(a: Int, b: Int): Boolean {
@@ -39,18 +39,16 @@ fun esPar(numero: Int): Boolean {
 
 fun esImpar(numero: Int): Boolean {
     return numero % 2 != 0
-
 }
 
 fun valorAbsoluto(numero: Int): Int {
-    TODO("Retornar el valor absoluto del numero")
+    return if (numero < 0) -numero else numero
 }
 
 fun maximo(a: Int, b: Int): Int {
-    TODO("Retornar el mayor entre a y b")
-
+    return if (a > b) a else b
 }
 
 fun minimo(a: Int, b: Int): Int {
-    TODO("Retornar el menor entre a y b")
+    return if (a < b) b else a
 }
