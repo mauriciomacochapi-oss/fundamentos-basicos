@@ -50,5 +50,7 @@ fun maximo(a: Int, b: Int): Int {
 }
 
 fun minimo(a: Int, b: Int): Int {
-    return if (a < b) b else a
+    return if (b < a) b else a
+
+
 }
