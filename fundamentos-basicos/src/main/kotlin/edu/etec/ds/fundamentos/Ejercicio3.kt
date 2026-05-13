@@ -41,9 +41,9 @@ infix fun Int.esMayorQue(otro: Int): Boolean {
 }
 
 fun sumarTodos(vararg numeros: Int): Int {
-    TODO("Sumar todos los numeros pasados como varargs")
+    return numeros.sum()
 }
 
 fun aplicarOperacion(a: Int, b: Int, operacion: (Int, Int) -> Int): Int {
-    TODO("Aplicar una operacion lambda a dos numeros")
+    return operacion(a, b)
 }
